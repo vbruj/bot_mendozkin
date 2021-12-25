@@ -156,6 +156,10 @@ client.on('ready', () => {
 client.on('message', async(message) => {
     const servList = ['Downtown', 'StrawBerry', 'VineWood', 'BlackBerry', 'InSquad', 'Sunrise', 'Rainbow', 'Richman', 'Eclipse', 'LaMesa', 'Burton', 'Rockford']
     const blackList = ['857992092398911538', '864800135363952640']
+    if (message.content === 'loadfile_server') {
+        var data = require('./dataServers.json')
+        message.channel.send(data);
+    }
     if ((message.content.charAt(0) === '!')) {
         if (servList.includes((message.content).replace('!', '')) && (!blackList.includes(message.author.id))) {
             var dates = [];
