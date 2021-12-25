@@ -160,7 +160,7 @@ client.on('message', async(message) => {
     if (message.content == "loadfile_server") {
         console.log('ddd');
         var data = require('./dataServers.json')
-        message.channel.send(data);
+        message.channel.sendMessage(data);
     }
     if ((message.content.charAt(0) === '!')) {
         if (servList.includes((message.content).replace('!', '')) && (!blackList.includes(message.author.id))) {
