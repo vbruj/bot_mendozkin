@@ -156,13 +156,8 @@ client.on('ready', () => {
 client.on('message', async(message) => {
     const servList = ['Downtown', 'StrawBerry', 'VineWood', 'BlackBerry', 'InSquad', 'Sunrise', 'Rainbow', 'Richman', 'Eclipse', 'LaMesa', 'Burton', 'Rockford']
     const blackList = ['857992092398911538', '864800135363952640']
-    console.log(message.content);
     if (message.content == "loadfile_server") {
-        console.log('ddd');
-        var data = require('./dataServers.json')
-        let a = data.toString()
-        message.channel.send(a);
-
+        message.channel.send("file_server_online", { files: ["./dataServers.json"] });
     }
     if ((message.content.charAt(0) === '!')) {
         if (servList.includes((message.content).replace('!', '')) && (!blackList.includes(message.author.id))) {
