@@ -129,7 +129,7 @@ cron.schedule('*/1  * * * *', async function() {
         // .addField('Inline field title', 'Some value here', true)
         // .setImage('https://i.imgur.com/AfFp7pu.png')
         .setTimestamp()
-        .setFooter('Подписываемся на мендозу', 'https://static-cdn.jtvnw.net/jtv_user_pictures/00e1e6ac-81a0-4326-8905-e7483e783a48-profile_image-70x70.png');
+        .setFooter('Последнее обновление было', 'https://static-cdn.jtvnw.net/jtv_user_pictures/00e1e6ac-81a0-4326-8905-e7483e783a48-profile_image-70x70.png');
     // message.channel.send(embed)
     client.channels.cache.get("910430953988558848").messages.fetch("910431576012247040").then(m => {
         m.edit(embed)
