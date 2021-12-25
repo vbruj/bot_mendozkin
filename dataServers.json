@@ -1,1 +1,98 @@
-{"Downtown":{"PeakOnlineDays":[2018,2039,2061,2043,2097,2178,2043,2015,1128,1859,1953,2143],"lastDateUpdate":"19.12.2021","timePeakOnline":"18:49","colorServerRGBA":"rgba(255, 109, 0, 1)","colorServerHEX":"#FF6D00","onlineNow":2143},"StrawBerry":{"PeakOnlineDays":[1697,1688,1701,1702,1661,1722,1695,1612,850,1579,1588,1705],"lastDateUpdate":"19.12.2021","timePeakOnline":"18:42","colorServerRGBA":"rgba(255, 0, 0, 1)","colorServerHEX":"#FF0000","onlineNow":1705},"VineWood":{"PeakOnlineDays":[1787,1707,1720,1751,1791,1775,1727,1726,1082,1732,1704,1821],"lastDateUpdate":"19.12.2021","timePeakOnline":"14:46","colorServerRGBA":"rgba(255, 0, 104, 1)","colorServerHEX":"#FF0068","onlineNow":1821},"BlackBerry":{"PeakOnlineDays":[1530,1495,1484,1506,1499,1506,1460,1436,677,1354,1404,1541],"lastDateUpdate":"19.12.2021","timePeakOnline":"20:28","colorServerRGBA":"rgba(82, 0, 255, 1)","colorServerHEX":"#5200FF","onlineNow":1541},"InSquad":{"PeakOnlineDays":[1369,1358,1322,1317,1273,1381,1292,1238,688,1175,1238,1417],"lastDateUpdate":"19.12.2021","timePeakOnline":"18:21","colorServerRGBA":"rgba(199, 0, 255, 1)","colorServerHEX":"#C700FF","onlineNow":1417},"Sunrise":{"PeakOnlineDays":[1719,1705,1745,1718,1784,1750,1682,1627,823,1630,1661,1789],"lastDateUpdate":"19.12.2021","timePeakOnline":"17:49","colorServerRGBA":"rgba(255, 205, 0, 1)","colorServerHEX":"#FFCD00","onlineNow":1789},"Rainbow":{"PeakOnlineDays":[1365,1314,1350,1358,1319,1396,1338,1266,684,1206,1226,1376],"lastDateUpdate":"19.12.2021","timePeakOnline":"18:53","colorServerRGBA":"rgba(0, 226, 255, 1)","colorServerHEX":"#00E2FF","onlineNow":1376},"Richman":{"PeakOnlineDays":[1576,1582,1567,1641,1632,1670,1568,1541,823,1440,1529,1695],"lastDateUpdate":"19.12.2021","timePeakOnline":"18:53","colorServerRGBA":"rgba(0, 255, 141, 1)","colorServerHEX":"#00FA8D","onlineNow":1695},"Eclipse":{"PeakOnlineDays":[1792,1837,1789,1777,1770,1888,1764,1736,963,1701,1703,1805],"lastDateUpdate":"19.12.2021","timePeakOnline":"18:47","colorServerRGBA":"rgba(0, 255, 40, 1)","colorServerHEX":"#00FF28","onlineNow":1805},"LaMesa":{"PeakOnlineDays":[1394,1361,1398,1401,1436,1429,1381,1376,700,766,1267,1369],"lastDateUpdate":"19.12.2021","timePeakOnline":"18:59","colorServerRGBA":"rgba(189, 255, 0, 1)","colorServerHEX":"#BDFF00","onlineNow":1369},"Burton":{"PeakOnlineDays":[1862,1821,1815,1760,1848,1821,1786,1707,988,1570,1601,1766],"lastDateUpdate":"19.12.2021","timePeakOnline":"19:48","colorServerRGBA":"rgba(210, 255, 141, 1)","colorServerHEX":"#D2FF8D","onlineNow":1766},"Rockford":{"PeakOnlineDays":[1597,1631,1560,1659,1600,1600,1610,1562,790,1450,1515,1663],"lastDateUpdate":"19.12.2021","timePeakOnline":"15:53","colorServerRGBA":"rgba(0, 242, 255,  1)","colorServerHEX":"#00F2FF","onlineNow":1663}}
+{
+    "Downtown": {
+        "PeakOnlineDays": [],
+        "lastDateUpdate": "19.12.2021",
+        "timePeakOnline": "18:49",
+        "colorServerRGBA": "rgba(255, 109, 0, 1)",
+        "colorServerHEX": "#FF6D00",
+        "onlineNow": 0
+    },
+    "StrawBerry": {
+        "PeakOnlineDays": [],
+        "lastDateUpdate": "19.12.2021",
+        "timePeakOnline": "18:42",
+        "colorServerRGBA": "rgba(255, 0, 0, 1)",
+        "colorServerHEX": "#FF0000",
+        "onlineNow": 0
+    },
+    "VineWood": {
+        "PeakOnlineDays": [],
+        "lastDateUpdate": "19.12.2021",
+        "timePeakOnline": "14:46",
+        "colorServerRGBA": "rgba(255, 0, 104, 1)",
+        "colorServerHEX": "#FF0068",
+        "onlineNow": 0
+    },
+    "BlackBerry": {
+        "PeakOnlineDays": [],
+        "lastDateUpdate": "19.12.2021",
+        "timePeakOnline": "20:28",
+        "colorServerRGBA": "rgba(82, 0, 255, 1)",
+        "colorServerHEX": "#5200FF",
+        "onlineNow": 0
+    },
+    "InSquad": {
+        "PeakOnlineDays": [],
+        "lastDateUpdate": "19.12.2021",
+        "timePeakOnline": "18:21",
+        "colorServerRGBA": "rgba(199, 0, 255, 1)",
+        "colorServerHEX": "#C700FF",
+        "onlineNow": 0
+    },
+    "Sunrise": {
+        "PeakOnlineDays": [],
+        "lastDateUpdate": "19.12.2021",
+        "timePeakOnline": "17:49",
+        "colorServerRGBA": "rgba(255, 205, 0, 1)",
+        "colorServerHEX": "#FFCD00",
+        "onlineNow": 0
+    },
+    "Rainbow": {
+        "PeakOnlineDays": [],
+        "lastDateUpdate": "19.12.2021",
+        "timePeakOnline": "18:53",
+        "colorServerRGBA": "rgba(0, 226, 255, 1)",
+        "colorServerHEX": "#00E2FF",
+        "onlineNow": 0
+    },
+    "Richman": {
+        "PeakOnlineDays": [],
+        "lastDateUpdate": "19.12.2021",
+        "timePeakOnline": "18:53",
+        "colorServerRGBA": "rgba(0, 255, 141, 1)",
+        "colorServerHEX": "#00FA8D",
+        "onlineNow": 0
+    },
+    "Eclipse": {
+        "PeakOnlineDays": [],
+        "lastDateUpdate": "19.12.2021",
+        "timePeakOnline": "18:47",
+        "colorServerRGBA": "rgba(0, 255, 40, 1)",
+        "colorServerHEX": "#00FF28",
+        "onlineNow": 0
+    },
+    "LaMesa": {
+        "PeakOnlineDays": [],
+        "lastDateUpdate": "19.12.2021",
+        "timePeakOnline": "18:59",
+        "colorServerRGBA": "rgba(189, 255, 0, 1)",
+        "colorServerHEX": "#BDFF00",
+        "onlineNow": 0
+    },
+    "Burton": {
+        "PeakOnlineDays": [],
+        "lastDateUpdate": "19.12.2021",
+        "timePeakOnline": "19:48",
+        "colorServerRGBA": "rgba(210, 255, 141, 1)",
+        "colorServerHEX": "#D2FF8D",
+        "onlineNow": 0
+    },
+    "Rockford": {
+        "PeakOnlineDays": [],
+        "lastDateUpdate": "19.12.2021",
+        "timePeakOnline": "15:53",
+        "colorServerRGBA": "rgba(0, 242, 255,  1)",
+        "colorServerHEX": "#00F2FF",
+        "onlineNow": 0
+    }
+}
