@@ -31,7 +31,7 @@ function timeNow() {
 function dateNow() {
     return new Date().toJSON().slice(0, 10).split('-').reverse().join('')
 }
-cron.schedule('*/2  * * * *', async function() {
+cron.schedule('*/1  * * * *', async function() {
     const fs = require('fs');
     const axios = require('axios')
     const servList = ['Downtown', 'StrawBerry', 'VineWood', 'BlackBerry', 'InSquad', 'Sunrise', 'Rainbow', 'Richman', 'Eclipse', 'LaMesa', 'Burton', 'Rockford']
@@ -50,6 +50,8 @@ cron.schedule('*/2  * * * *', async function() {
         if (new Date().getHours() === 0 && new Date().getMinutes() === 1) {
             // PeakOnlineTime[index] = timeNow()
             // if (data[item.name].PeakOnlineDays.length === 10) {
+            console.log('1');
+            console.log(item);
             if (data[item.name].lastDateUpdate.split('.').join('') < dateNow()) {
                 // data[item.name].PeakOnlineDays.splice(0, 1)
                 data[item.name].PeakOnlineDays.push(item.peak)
@@ -78,6 +80,7 @@ cron.schedule('*/2  * * * *', async function() {
                 value: '\u200B'
             })
         } else {
+            console.log(item);
             if (item.peak === item.players) {
                 // PeakOnlineTime[index] = timeNow()
                 // if (data[item.name].PeakOnlineDays.length === 10) {
