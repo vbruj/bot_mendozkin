@@ -25,7 +25,7 @@ const config = {
 const PeakOnlineTime = ['время не определено', 'время не определено', 'время не определено', 'время не определено', 'время не определено', 'время не определено', 'время не определено', 'время не определено', 'время не определено', 'время не определено', 'время не определено', 'время не определено'];
 
 function timeNow() {
-    return new Date().toLocaleString().split(', ')[1].split(':')[0] + 3 + ':' + new Date().toLocaleString().split(',')[1].split(':')[1]
+    return (+(new Date().toLocaleString().split(', ')[1].split(':')[0]) + 3) + ':' + new Date().toLocaleString().split(',')[1].split(':')[1]
 }
 
 function dateNow() {
