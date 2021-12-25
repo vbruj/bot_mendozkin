@@ -10,8 +10,8 @@ const Discord = require('discord.js'),
     disbut = require('discord-buttons');
 const cron = require('node-cron')
 disbut(client);
-const WOKCommands = require('wokcommands')
-    // const Disbut = require('discord-buttons')
+// const WOKCommands = require('wokcommands')
+// const Disbut = require('discord-buttons')
 require('dotenv').config()
 const config = {
     token: process.env.TOKEN,
@@ -50,8 +50,8 @@ cron.schedule('*/1  * * * *', async function() {
         if (new Date().getHours() === 0 && new Date().getMinutes() === 1) {
             // PeakOnlineTime[index] = timeNow()
             // if (data[item.name].PeakOnlineDays.length === 10) {
-            console.log('1');
-            console.log(item);
+            // console.log('1');
+            // console.log(item);
             if (data[item.name].lastDateUpdate.split('.').join('') < dateNow()) {
                 // data[item.name].PeakOnlineDays.splice(0, 1)
                 data[item.name].PeakOnlineDays.push(item.peak)
@@ -80,7 +80,7 @@ cron.schedule('*/1  * * * *', async function() {
                 value: '\u200B'
             })
         } else {
-            console.log(item);
+            // console.log(item);
             if (item.peak === item.players) {
                 // PeakOnlineTime[index] = timeNow()
                 // if (data[item.name].PeakOnlineDays.length === 10) {
@@ -139,18 +139,18 @@ cron.schedule('*/1  * * * *', async function() {
 client.on('ready', () => {
     const umnie = 'Бот готов!'
     console.log(umnie)
-    const dbOptions = {
-        keepAlive: true,
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-        useFindAndModify: false,
-    }
-    new WOKCommands(client, {
-            commandsDir: 'commands',
-            featureDir: 'features',
-            dbOptions
-        })
-        .setDefaultPrefix('.')
+        // const dbOptions = {
+        //     keepAlive: true,
+        //     useNewUrlParser: true,
+        //     useUnifiedTopology: true,
+        //     useFindAndModify: false,
+        // }
+        // new WOKCommands(client, {
+        //         commandsDir: 'commands',
+        //         featureDir: 'features',
+        //         dbOptions
+        //     })
+        //     .setDefaultPrefix('.')
 })
 
 client.on('message', async(message) => {
