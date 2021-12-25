@@ -31,7 +31,7 @@ function timeNow() {
 function dateNow() {
     return new Date().toJSON().slice(0, 10).split('-').reverse().join('')
 }
-cron.schedule('*/1  * * * *', async function() {
+cron.schedule('*/2  * * * *', async function() {
     const fs = require('fs');
     const axios = require('axios')
     const servList = ['Downtown', 'StrawBerry', 'VineWood', 'BlackBerry', 'InSquad', 'Sunrise', 'Rainbow', 'Richman', 'Eclipse', 'LaMesa', 'Burton', 'Rockford']
