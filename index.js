@@ -184,7 +184,8 @@ client.on('message', async(message) => {
             } else if (date.getMonth() == 11) {
                 month = ' Декабря'
             }
-            for (var i = 0; i < 10; i++) {
+
+            for (var i = 0; i < data[(message.content).replace('!', '')].PeakOnlineDays.length; i++) {
                 var date1 = new Date();
                 date1.setDate(date1.getDate() - i);
                 var str = pad(date1.getDate()) + " " + month;
@@ -192,7 +193,7 @@ client.on('message', async(message) => {
             }
 
             function pad(n) {
-                return (n < 10) ? ("0" + n) : n;
+                return (n < data[(message.content).replace('!', '')].PeakOnlineDays.length) ? ("0" + n) : n;
             }
 
             const chart = {
@@ -200,8 +201,8 @@ client.on('message', async(message) => {
                 data: {
                     labels: dates.reverse(),
                     datasets: [{
-                        label: (message.content).replace('!', '') + ': пиковый онлайн за последние 10д.',
-                        data: data[(message.content).replace('!', '')].PeakOnlineDays.slice((data[(message.content).replace('!', '')].PeakOnlineDays.length - 10)),
+                        label: (message.content).replace('!', '') + `: пиковый онлайн за последние ${data[(message.content).replace('!', '')].PeakOnlineDays.length}д.`,
+                        data: data[(message.content).replace('!', '')].PeakOnlineDays.slice((data[(message.content).replace('!', '')].PeakOnlineDays.length - data[(message.content).replace('!', '')].PeakOnlineDays.length)),
                         backgroundColor: data[(message.content).replace('!', '')].colorServerRGBA,
                         fill: false,
                         borderColor: data[(message.content).replace('!', '')].colorServerRGBA
