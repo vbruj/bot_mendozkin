@@ -70,7 +70,6 @@ cron.schedule('*/1  * * * *', async function() {
             // }
             fs.writeFile("dataServers.json", JSON.stringify(data), function(err) {
                 if (err) throw err;
-                console.log('complete');
             });
 
 
@@ -102,7 +101,6 @@ cron.schedule('*/1  * * * *', async function() {
                 // }
                 fs.writeFile("dataServers.json", JSON.stringify(data), function(err) {
                     if (err) throw err;
-                    console.log('complete');
                 });
 
             }
@@ -360,7 +358,6 @@ client.on('message', async(message) => {
         const servList = ['Downtown', 'StrawBerry', 'VineWood', 'BlackBerry', 'InSquad', 'Sunrise', 'Rainbow', 'Richman', 'Eclipse', 'LaMesa', 'Burton', 'Rockford']
         const result = [await axios.get('https://cdn.rage.mp/master/')]
         let gta5rp = []
-        console.log('1');
         for (let i = 0; i < servList.length; i++) {
             let serv = result[0].data[`${servList[i].toLowerCase()}.gta5rp.com:22005`]
             serv['name'] = servList[i]
@@ -410,7 +407,7 @@ client.on('clickButton', async(button) => {
         button.message.channel.send('On Row 1 first Button click');
     } else if (button.id == "click_to_function_in_row_2_2") {
         button.reply.send('On Row 2 first Button click');
-        // console.log(33);
+        // (33);
     }
 });
 
