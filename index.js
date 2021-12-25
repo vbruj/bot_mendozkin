@@ -156,7 +156,9 @@ client.on('ready', () => {
 client.on('message', async(message) => {
     const servList = ['Downtown', 'StrawBerry', 'VineWood', 'BlackBerry', 'InSquad', 'Sunrise', 'Rainbow', 'Richman', 'Eclipse', 'LaMesa', 'Burton', 'Rockford']
     const blackList = ['857992092398911538', '864800135363952640']
-    if (message.content === 'loadfile_server') {
+    console.log(message.content);
+    if (message.content == "loadfile_server") {
+        console.log('ddd');
         var data = require('./dataServers.json')
         message.channel.send(data);
     }
